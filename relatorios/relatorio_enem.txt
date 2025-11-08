@@ -1,0 +1,24 @@
+
+RELATÓRIO DE VENDAS ENEM 🧾
+----------------------------
+Total de Vendas: R$ 16,262.92
+Ticket Médio: R$ 162.63
+
+Top Produtos:
+produto
+Curso Online Redação      3935.33
+Resumos Matemática        3265.22
+Apostila Completa ENEM    3144.85
+Curso Intensivo ENEM      2764.77
+Simulado Premium          2234.19
+Name: valor, dtype: float64
+
+Vendas por Vendedor:
+vendedor
+Ana      3372.83
+João     3726.84
+Lucas    4543.53
+Maria    4619.72
+Name: valor, dtype: float64
+
+Gráficos gerados: top_produtos.png | vendas_vendedor.png

@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import os
 
 # Caminho do arquivo CSV
-caminho_csv = "C:/Users/whall/Desktop/projetos/analise_enem/dados/vendas_enem.csv"
+caminho_csv = "C:/Users/whall/Desktop/analise_enem/dados/vendas_enem.csv"
 
 # Ler o CSV
 df = pd.read_csv(caminho_csv)

@@ -1,122 +1,92 @@
-# 📊 Análise de Vendas ENEM — Python + Pandas + Matplotlib
+# 📊 Análise de Vendas ENEM — Python & Pandas
 
-Projeto completo de **Análise Exploratória de Dados (EDA)** usando Python, focado em entender o desempenho de vendas de produtos educacionais do ENEM.
+Projeto desenvolvido para analisar um conjunto de dados de vendas relacionadas ao ENEM, gerando métricas essenciais, rankings, gráficos automáticos e um relatório completo.  
+Ideal para portfólio de **Analista de Dados Júnior**, mostrando domínio em **Pandas, Matplotlib, manipulação de dados e geração de insights**.
 
-Aqui você encontra tudo o que um analista de dados de verdade faz no dia a dia: limpeza, organização, KPIs, gráficos, insights e automação do fluxo.
+## 🚀 Funcionalidades Principais
 
----
-
-## 🚀 Objetivo do Projeto
-
-O foco é gerar valor de negócio através da análise dos dados:
-
-- 📦 Entender os produtos que mais vendem  
-- 💰 Calcular faturamento total e ticket médio  
-- 🏆 Descobrir os top produtos  
-- 🧑‍💼 Avaliar desempenho por vendedor  
-- 📅 Analisar a distribuição temporal das vendas  
-- 📈 Criar visualizações para facilitar a tomada de decisão  
-
----
+- ✔️ Leitura automática do dataset de vendas  
+- ✔️ Cálculo de métricas essenciais:
+  - **Total de vendas**
+  - **Ticket médio**
+  - **Top 5 produtos mais lucrativos**
+  - **Vendas por vendedor**
+- ✔️ Geração automática de gráficos:
+  - 📈 Top produtos mais vendidos  
+  - 🥧 Participação percentual por vendedor
+- ✔️ Criação de relatório completo em `.txt`
+- ✔️ Pasta `relatorios/` criada automaticamente
 
 ## 🧠 Tecnologias Utilizadas
 
-- **Python 3.x**  
-- **Pandas** — limpeza + manipulação dos dados  
-- **NumPy** — funções matemáticas  
-- **Matplotlib** — gráficos  
-- **OS** — automação de diretórios  
-
----
+- **Python 3**
+- **Pandas**
+- **NumPy**
+- **Matplotlib**
+- **OS**
 
 ## 📂 Estrutura do Projeto
 
-analise_enem/
-│
+```
+/
+├── analise_enem.py
 ├── dados/
-│ └── vendas_enem.csv # Arquivo base original
-│
-├── relatorios/ # Gráficos gerados automaticamente
-│ ├── top_produtos.png
-│ ├── vendas_por_vendedor.png
-│ └── distribuicao_temporal.png
-│
-├── analise_enem.py # Script principal da análise
-└── README.md # Este arquivo lindo que você está lendo
+│   └── vendas_enem.csv
+└── relatorios/
+    ├── top_produtos.png
+    ├── vendas_vendedor.png
+    └── relatorio_enem.txt
+```
 
+## 🛠️ Como Executar o Projeto
 
----
-
-## 🔍 Etapas da Análise
-
-### 1️⃣ Carregamento e limpeza dos dados  
-- Conferência de colunas  
-- Conversão de tipos  
-- Padronização das datas  
-
-### 2️⃣ Cálculo dos KPIs principais  
-```python
-total_vendas = df['valor'].sum()
-ticket_medio = df['valor'].mean()
-
-3️⃣ Top produtos
-
-Agrupamento por produto para achar os mais rentáveis.
-
-4️⃣ Desempenho por vendedor
-
-Gráfico em pizza ou barras comparando faturamento individual.
-
-5️⃣ Visualizações
-
-Todos os gráficos são exportados para a pasta relatorios/ automaticamente.
-
-📊 Exemplos de Gráficos
-
-Top Produtos
-
-Vendas por Vendedor
-
-Distribuição Temporal das Vendas
-
-Os arquivos são salvos automaticamente a cada execução.
-
-⚙️ Como Executar o Projeto
-
-1.Clone o repositório:
-
-git clone https://github.com/WhallysonGGDS/analise-enem.git
-
+1. Tenha o Python instalado (3.10+ recomendado)  
 2. Instale as dependências:
 
+```bash
 pip install pandas numpy matplotlib
+```
 
-3. Execute o script:
+3. Ajuste o caminho do CSV se necessário:
 
+```python
+caminho_csv = "C:/Users/whall/Desktop/Analise_de_Vendas/dados/vendas_enem.csv"
+```
+
+4. Rode o script:
+
+```bash
 python analise_enem.py
+```
 
-4. Veja os gráficos gerados na pasta relatorios/.
+5. Veja os relatórios gerados na pasta:
 
-💡 Insights Gerados
+```
+./relatorios/
+```
 
-Produtos mais caros nem sempre são os que mais vendem.
+## 📊 Exemplos de Saída
 
-Determinados vendedores têm clara dominância de faturamento.
+- **top_produtos.png**  
+- **vendas_vendedor.png**  
+- **relatorio_enem.txt**
 
-As vendas possuem sazonalidade semanal.
+## 🧾 Sobre o Dataset
 
-O ticket médio revela oportunidades de upsell.
+O arquivo **vendas_enem.csv** deve conter as seguintes colunas:
 
-Sempre focado na tomada de decisão, não só em números.
+| coluna   | descrição |
+|----------|-----------|
+| produto  | Nome do produto vendido |
+| valor    | Valor unitário da venda |
+| vendedor | Quem realizou a venda |
 
-🧑‍💻 Autor
+## 🤝 Contribuições
 
-Gabriel Garcia (Whallyson)
-Analista de Dados • Python Lover • Builder de Projetos Reais
-📍 Goiânia — GO
+Sugestões e melhorias são sempre bem-vindas!
 
-⭐ Quer contribuir?
+## 🧑‍💻 Autor
 
-Fique à vontade para abrir issues, enviar sugestões ou mandar aquele PR maroto.
-
-Se curtir o projeto, deixa uma ⭐ no repo — ajuda demais! 🚀✨
+**Whallyson Gabriel Garcia da Silva**  
+Analista de Dados • Brasil  
+GitHub: https://github.com/WhallysonGGDS
